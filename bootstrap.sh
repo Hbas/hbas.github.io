@@ -14,6 +14,3 @@ su vagrant
 gem install bundle
 cd /vagrant
 bundle install
-
-echo Serving pages...
-bundle exec jekyll serve
