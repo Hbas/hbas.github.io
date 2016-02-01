@@ -1,1 +1,1 @@
-jekyll serve --watch --force_polling
+jekyll serve --force_polling

@@ -1,0 +1,13 @@
+$base-green: #76923c;
+
+.btn.btn-green {
+  color: #fff;
+  background-color: $base-green;
+  border-color: darken($base-green, 10%);
+}
+
+.btn.btn-green:hover, .btn.btn-green:focus {
+  color: #fff;
+  background-color: darken($base-green, 5%);
+  border-color: darken($base-green, 15%);
+}

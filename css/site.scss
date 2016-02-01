@@ -1,0 +1,18 @@
+---
+---
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.img-half {
+	display: inline-block;
+	width: 45%;
+	height: auto;
+	margin: 20px 0;
+}
+
+@import "theme";
+@import "lessons";
+@import "exercises";

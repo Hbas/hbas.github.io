@@ -1,0 +1,95 @@
+.lessonHeader
+{
+	background-size: cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	border-radius: 5px;
+	border: 1px solid #777;
+
+	blockquote
+	{
+		width: 100%;
+		margin: 0;
+		padding: 30px 0;
+		font-size: 16pt;
+		font-weight: bold;
+		text-shadow: 1px 1px darken($base-green, 25%);
+		vertical-align: middle;
+		border: 0;
+		color: darken($base-green, 5%);
+
+		p
+		{
+			text-align: center;
+			margin: 5px 0;
+		}
+
+		small
+		{
+			text-align: center;
+			color: lighten($base-green, 5%);
+		}
+
+	}
+
+
+	img
+	{
+		margin: 0;
+	}
+}
+
+
+.lesson
+{
+	font-size: 15pt;
+
+	.largeSpace
+	{
+		padding: 300px 0;
+	}
+
+	.spaced
+	{
+		margin-top: 30px;
+	}
+
+	.btn
+	{
+		font-size: 15pt;
+	}
+
+	p
+	{
+		margin: 30px 0;
+		line-height: 150%;
+		text-align: justify;
+	}
+
+	code
+	{
+		font-size: 15pt;
+	}
+
+	.emphasis
+	{
+		padding: 50px 0;
+		background-color: #F7F7F7;
+		text-align: center;
+	}
+
+	.emphasis.light
+	{
+		background-color: #FAFAFA;
+	}
+
+	.lessonSection
+	{
+		color: #76923c;
+		border-bottom: 1px solid #76923c;
+		font-weight: bold;
+		font-size: 16pt;
+		text-align: center;
+		padding: 20px 0;
+	}
+}
