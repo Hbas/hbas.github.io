@@ -78,20 +78,18 @@ Assim, os objetivos deste curso são:
   </div>
 </div>
 
-Sobre as aulas
+## Sobre as aulas
 {: .lessonSection}
 
 Nossas aulas serão majoritariamente on-line, através deste site, e o aprendizado se dará principalmente através da resolução de exercícios individuais e da revisão de código com colegas.
 
-Para cada unidade, começaremos com um exercício de auto-avaliação sobre o tópico. Você deve buscar, sozinho ou com colegas, aprender o necessário para resolver o problema com a maior qualidade possível e, individualmente, resolver e enviar este exercício para o professor-tutor por e-mail ou através de ferramentas como o Github. Por se tratar apenas de uma auto-avaliação, independente da qualidade do código nesta primeira etapa, seu instrutor irá liberar seu acesso a lição.
+Para cada unidade, começaremos com um exercício de auto-avaliação sobre o tópico. Você deve buscar, sozinho ou com colegas, aprender o necessário para resolver o problema com a maior qualidade possível e, individualmente, resolver e enviar este exercício para o professor-tutor por e-mail ou através de ferramentas como o Github. Por se tratar apenas de uma auto-avaliação, independente da qualidade do código nesta primeira etapa, seu instrutor irá responder com o link para a próxima lição.
 
 Com isso, você terá acesso a um texto e/ou vídeo explicando o assunto, bem como a um conjunto maior de exercícios. Você deve aprender o conteúdo, realizar individualmente estes novos exercícios, revisar os exercícios de auto-avaliação, e enviar tudo novamente.
 
-Após o segundo envio, o professor-tutor irá corrigir o material recebido e lhe dar feedback, solicitando melhorias. Dependendo do caso, o professor-tutor pode liberar seu acesso a exercícios complementares (extras) de algum assunto ou unidade. Apenas quando o professor-tutor avaliar que o conteúdo foi *realmente apreendido* por você é que você deve acessar a próxima unidade.
+Após o segundo envio, o professor-tutor irá corrigir o material recebido e lhe dar feedback, solicitando melhorias. Dependendo do caso, o professor-tutor pode liberar seu acesso a exercícios complementares (extras) de algum assunto ou unidade. Apenas quando o professor-tutor avaliar que o conteúdo foi *realmente apreendido* por você é que você irá receber o link para acessar a próxima unidade.
 
 Durante todo o curso, um forum / lista de e-mails estará disponível. Além disso, ocasionalmente, o professor-tutor irá agendar reuniões presenciais ou reuniões on-line (através de ferramentas como Skype e/ou GTalk) para a discussão de assuntos, resolução sincrona de dúvidas e compartilhamento de informações.
-
-Abaixo, exibimos a ementa deste curso:
 
 **Ementa**
 {: .close-to-bottom}

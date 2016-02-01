@@ -78,18 +78,27 @@
 		text-align: center;
 	}
 
-	.emphasis.light
-	{
-		background-color: #FAFAFA;
-	}
-
 	.lessonSection
 	{
 		color: #76923c;
-		border-bottom: 1px solid #76923c;
+		border-bottom: 1px dashed #76923c;
 		font-weight: bold;
-		font-size: 16pt;
 		text-align: center;
+		margin: 0;
+		margin-top: 80px;
+	}
+
+	h2.lessonSection
+	{
+		border-top: 1px solid #76923c;
+		border-bottom-style: solid;
+		font-size: 16pt;
 		padding: 20px 0;
+	}
+
+	pre.prettyprint
+	{
+		border: 0;
+		background-color: #FAFAFA;
 	}
 }
