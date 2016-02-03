@@ -14,7 +14,7 @@ Neste módulo vamos tratar de revisões de código. Atualmente, as maneiras mais
 Antes de detalharmos estes 3 tipos de revisões, no entanto, vamos começar pelos objetivos de todas elas:
 
   - Difundir conhecimentos e habilidades;
-  - Encontrar problemas no sistema, como defeitos, baixa performance e alto consumo de memória, com a uma boa relação custo-benefício; e
+  - Encontrar problemas no sistema, como defeitos, baixa performance e alto consumo de memória, com uma boa relação custo-benefício; e
   - Descobrir oportunidades de refatoração/clarificação do código-fonte.
 
 Revisão informal (ou 'vê isso aqui, por favor')
