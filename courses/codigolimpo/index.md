@@ -20,7 +20,6 @@ Aqui trazemos um exemplo de uma demanda de software. Para fins didáticos, nos r
 
 Funciona, então deixa quieto. Certo? Prestem bastante atenção nesta função. O que ela faz?
 
-<a id="funcaoJavascript"></a>
 
 ~~~~~~
 function s (a, b) {

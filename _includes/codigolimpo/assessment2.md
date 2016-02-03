@@ -7,7 +7,7 @@ O código abaixo corresponde a uma implementação deste crivo. Revise-o, listan
 ~~~~~~  
 public class EratosthenesSieve
 {
-    /// &lt;param name="maxValue"&gt;the generation limit.&lt;/param&gt;
+    /// <param name="maxValue>the generation limit.</param>;
     public static int[] generatePrimes(int maxValue)
     {
         if (maxValue >= 2) // the only valid case

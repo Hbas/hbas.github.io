@@ -1,1 +1,1 @@
-jekyll serve --force_polling
+jekyll serve --force_polling --safe
