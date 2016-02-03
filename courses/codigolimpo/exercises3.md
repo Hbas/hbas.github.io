@@ -34,4 +34,4 @@ Atenção: Este exercício deve ser feito em dupla e na presença do professor-t
 
 Utilizando o processo formal de revisão de código aprendido e uma ferramenta como o GitHub ou o GitLab, analise o código feito para o exercício anterior por outra dupla através de um merge/push request.
 
-Lembre-se de gerar um checklist, evidências e compartilhá-las com o seu professor-tutor.
+Lembre-se de gerar um checklist, evidências (merge/push request e comentários no código) e compartilhá-las com o seu professor-tutor.
