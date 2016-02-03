@@ -84,7 +84,7 @@ class Program
   }
 }
 ~~~~~~
-{: .prettyprint}
+
 
 ## Exercício 1.5: Números. Complexos. (parte 2)
 
@@ -124,4 +124,3 @@ class Program
   }
 }
 ~~~~~~
-{: .prettyprint}

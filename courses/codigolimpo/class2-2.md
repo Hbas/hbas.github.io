@@ -19,7 +19,7 @@ Observe, por exemplo, o caso da função assertEquals, presente em muitos framew
 Assert.AreEquals(expected, actual);
 Assert.AreEquals(actual, expected);
 ~~~~~~
-{: .prettyprint}
+
 
 Percebam que, por se tratar de uma função díade (com 2 parâmetros) precisamos prestar atenção e pensar sobre a ordem, o tipo dos parâmetros, etc.
 
@@ -37,7 +37,7 @@ Normalmente, existem três razões comuns para passarmos argumentos:
 ~~~~~~
 bool exists(string fileName)
 ~~~~~~
-{: .prettyprint}
+
 
 > *2. Quando, utilizando o estado/atributos da classe atual, estamos fazendo alguma operação sobre o argumento, transformando-o em outra coisa*
 
@@ -46,14 +46,14 @@ class Directory {
   InputStream open(string fileName);
 }
 ~~~~~~
-{: .prettyprint}
+
 
 > *3. Quando estamos usando eventos, notificando a classe de algo que aconteceu ou lhe dando alguma “ordem”*
 
 ~~~~~~
 void log(string msg)
 ~~~~~~
-{: .prettyprint}
+
 
 Assim, evite fazer funções que não sigam estas 3 situações. Um caso clássico é quando fazemos uma função em nossa classe para modificarmos o comportamento do argumento. Nestas situações, fica bem mais fácil de entender e manter o código se vocês refatorarem para uma das 3 situações "comuns", como eu mostro abaixo:
 
@@ -64,7 +64,7 @@ this.AppendFooterTo(p);
 //Melhor: Evento / Comando
 p.Append(this.getFooter());
 ~~~~~~
-{: .prettyprint}
+
 
 Muitos parâmetros
 {: .lessonSection}
@@ -74,14 +74,14 @@ Quando temos uma função com muitos parâmetros, é interessante analisar se al
 ~~~~~~
 public static Circle MakeCircle(double x, double y, double radius)  { ... }
 ~~~~~~
-{: .prettyprint}
+
 
 Neste caso, talve os dois primeiros parâmetros (x e y) representem um *Ponto*:
 
 ~~~~~~
 public static Circle MakeCircle(Point center, double radius) { ... }
 ~~~~~~
-{: .prettyprint}
+
 
 Com isto em mente e, já que o método estava estático, é melhor deixar o próprio ponto criar um círculo:
 
@@ -90,7 +90,7 @@ public Circle MakeCircle(double radius) { ... }
 
 var circle = center.MakeCircle(5);
 ~~~~~~
-{: .prettyprint}
+
 
 Outro caso comum de funções com muitos parâmetros é quando parte destes parâmetros são sempre passados para vários métodos:
 
@@ -101,7 +101,7 @@ public class BusinessService<T> {
   bool HasSomething(Logger log);
 }
 ~~~~~~
-{: .prettyprint}
+
 
 No caso acima, por exemplo, podemos mover o *Logger* para um atributo da classe e retirar este argumento de várias funções
 
@@ -117,7 +117,7 @@ if (Set("name","henrique") == "henrique"){
   // Success
 }
 ~~~~~~
-{: .prettyprint}
+
 
 Veja, na chamada, como fica confuso o código que faz uso dessa funcionalidade. Tentê lê-la, como se fosse uma redação: *"Se atribuir a 'nome', 'henrique' for igual a 'henrique'"*? Ahn?
 
@@ -134,7 +134,7 @@ Render(bool isContainer)
 RenderContainer();
 RenderPanel();
 ~~~~~~
-{: .prettyprint}
+
 
 Funções com side effects
 {: .lessonSection}
@@ -151,7 +151,7 @@ public boolean CheckPassword (string userName, string password){
   return false;
 }
 ~~~~~~
-{: .prettyprint}
+
 
 Se vocês perceberam, o método chamado CheckPassword *inicializa a sessão* do usuário se a senha for válida!
 
@@ -182,7 +182,7 @@ if (delete(item) == OP_OK) {
   return FATAL_ERROR;
 }
 ~~~~~~
-{: .prettyprint}
+
 
 Hoje em dia, raras são as situações em que isso é recomendável. Quando retornamos um código de erro (ou mesmo *null*) criamos o problema de que o código cliente vá ter que tratar isso imediatamente, piorando a legibilidade das nossas funções. Se, no entanto, você utilizar excessões, o tratamento de erro pode ser feito num momento posterior e mais adequado, conforme refatoração abaixo:
 
@@ -195,7 +195,7 @@ try {
   logger.log(e.GetMessage());
 }
 ~~~~~~
-{: .prettyprint}
+
 
 São **poucos** os casos em que temos expectativas de que o método vá **tentar** fazer algo. Métodos do tipo *TryGet* e *FirstOrDefault* são exemplos desse tipo de situação. Apenas nestes casos faz sentido retornar um valor "default" ou, melhor ainda, usar o padrão de projeto [Null Object](http://en.wikipedia.org/wiki/Null_Object_pattern){: target="ref" }. Sempre que possível, no entanto, evite métodos que "tentam" e prefira métodos que "fazem".
 

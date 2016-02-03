@@ -39,7 +39,7 @@ private static bool check(int number)
     return ok;	 
 }
 ~~~~~~
-{: .prettyprint}
+
 
 ## Exercício 1.2: sdn-sei-la-o-q
 
@@ -64,4 +64,3 @@ public static void main(string[] args)
     System.in.read();
 }
 ~~~~~~
-{: .prettyprint}

@@ -87,7 +87,7 @@ public int[] GeneratePrimes(int maxValue)
   return UncrossedIntegers();
 }
 ~~~~~~
-{: .prettyprint}
+
 
 Vamos ler esse método, em voz alta, como um texto:
 
@@ -116,7 +116,7 @@ private void CrossOutMultiplesOfThePrimes()
   }
 }
 ~~~~~~
-{: .prettyprint}
+
 
 Acima está um exemplo de implementação de um dos métodos privados. Percebam que apesar dele ser de mais “baixo nível” que o *GeneratePrimes*, ele chama outros métodos de mais baixo nível ainda:
 
@@ -133,7 +133,7 @@ private void CrossOutMultiplesOf(int number)
   }
 }
 ~~~~~~
-{: .prettyprint}
+
 
 O menor nível de abstração termina quando realmente fazemos as operações. Neste exemplo, apresentamos três níveis de abstração para as funções. Dependendo da complexidade do que se quer fazer, este número pode ser maior ou menor.
 

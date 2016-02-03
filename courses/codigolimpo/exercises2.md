@@ -36,7 +36,7 @@ private static bool IsMultiple(int i, int j, bool debug)
   return ret;
 }
 ~~~~~~
-{: .prettyprint}
+
 
 ## Exercício 2.3: Contar domingos.
 
@@ -93,7 +93,7 @@ public class CountSundaysTest
   }
 }
 ~~~~~~
-{: .prettyprint}
+
 
 ~~~~~~
 class CountSundays
@@ -175,7 +175,7 @@ class CountSundays
   }
 }
 ~~~~~~
-{: .prettyprint}
+
 
 ## Exercício 2.4: Grandes inteiros
 
@@ -213,7 +213,7 @@ public class HugeNumberTest
   }
 }
 ~~~~~~
-{: .prettyprint}
+
 
 ~~~~~~
 public class HugeNumber
@@ -270,4 +270,3 @@ public class HugeNumber
   }
 }
 ~~~~~~
-{: .prettyprint}
