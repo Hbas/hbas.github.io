@@ -1,6 +1,7 @@
 $base-green: #76923c;
 $base-brown: #5d523c;
 $base-red: #802021;
+$sand: #ddbe92;
 
 .btn.btn-green {
   color: #fff;
@@ -24,4 +25,12 @@ pre {
 
 .hljs-string, .hljs-number {
   color: $base-red;
+}
+
+a {
+  color: darken($sand,15%);
+}
+
+a:hover, a:focus {
+  color: $sand;
 }

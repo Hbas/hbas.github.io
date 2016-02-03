@@ -87,8 +87,8 @@ var expectedRevenueModel;
 var expectedRevenueData;
 var expectedRevenueInfo;
 
-class Customer
-class CustomerObject
+class Customer { ... }
+class CustomerObject { ... }
 ~~~~~~
 
 Qual a diferença entre as variáveis acima? E entre as classes? Estes sufixos não dizem nada.
