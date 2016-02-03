@@ -38,7 +38,6 @@ Se um nome que você escreveu precisa de uma conversa, uma frase ou um comentár
 ~~~~~~
 int d; // (um comentário explicando a variável)
 ~~~~~~
-{: .prettyprint}
 
 *3. Não deixem implícito*
 {: .lessonSection}
@@ -48,7 +47,6 @@ Escrever (ou mais frequentemente pensar) num comentário que explicaria a variá
 ~~~~~~
 int d; //número de dias no mês
 ~~~~~~
-{: .prettyprint}
 
 O problema do código com a variável *"d"*, acima, não é que ele está confuso ou que falte informação. É a informação que não faz parte da variável.
 
@@ -63,7 +61,6 @@ int d; //número de dias no mês
 
 int daysInMonth; //comentário desnecessário
 ~~~~~~
-{: .prettyprint}
 
 *4. Faça distinções*
 {: .lessonSection}
@@ -79,7 +76,6 @@ public static void copy (int a1[], int a2[]) {
     }
 }
 ~~~~~~
-{: .prettyprint}
 
 Qual a diferença de "a1" para "a2" ? Imagine agora a mesma função com os argumentos "source" e "destination". Bem melhor, não?
 
@@ -94,7 +90,6 @@ var expectedRevenueInfo;
 class Customer
 class CustomerObject
 ~~~~~~
-{: .prettyprint}
 
 Qual a diferença entre as variáveis acima? E entre as classes? Estes sufixos não dizem nada.
 
@@ -104,7 +99,6 @@ Também não coloquem, por exemplo, duas funções com apenas um 's' de diferen�
 getActiveAccount();
 getActiveAccounts();
 ~~~~~~
-{: .prettyprint}
 
 No código acima, o ideal é refatorar o primeiro método para *get<strong>First</strong>ActiveAcccount()*.
 
@@ -116,7 +110,6 @@ var variable;
 var foo;
 var bar;
 ~~~~~~
-{: .prettyprint}
 
 *5. Pronuncie*
 {: .lessonSection}
@@ -128,7 +121,6 @@ string creymdhms;
 string modymdhms;
 //modymdhms = modification date: year, month, day, hour, minute, and second
 ~~~~~~
-{: .prettyprint}
 
 Imaginem esse diálogo entre dois programadores, baseado no código acima:
 
@@ -148,7 +140,6 @@ Considere que alguém renomeou essas variáveis para “dataDeCriacaoFormatada�
 if(CheckIfSomethingHasHappened()) { .. }
 if(SomethingHasHappened())  { .. }
 ~~~~~~
-{: .prettyprint}
 
 Leiam o código acima em voz alta. Veja, na primeira linha, como a leitura fica ligeiramente dificultada pelo “if check if”.
 
@@ -165,7 +156,6 @@ Para evitar confusões, Simonyi trabalhava com uma convenção de código que, e
 int rwSelectionStart; //row
 int colSelectionEnd; // column
 ~~~~~~
-{: .prettyprint}
 
 Isso era muito bom, pois sempre que se faziam operações com linhas e colunas, por exemplo, era mais visível quando se fazia uma comparação entre linhas e quando havia um erro, comparando a linha com a coluna.
 
@@ -174,7 +164,6 @@ Isso era muito bom, pois sempre que se faziam operações com linhas e colunas, 
 int dy = rwSelectionStart – rwSelectionEnd;
 int erro = rwSelectionStart – colSelectionEnd;
 ~~~~~~
-{: .prettyprint}
 
 O problema é que o negócio pegou e ficou meio fora de controle. Tem gente hoje em dia que confunde “tipo” com "classe" e utiliza a convenção de Simonyi quando não deveria:
 
@@ -183,7 +172,6 @@ O problema é que o negócio pegou e ficou meio fora de controle. Tem gente hoje
 string str_name;
 int i_age;
 ~~~~~~
-{: .prettyprint}
 
 Quando o código é seu, é sempre preferível, ao invés de criar convenções de nomes, criar novas classes. Além de deixar o código mais legível, se a linguagem for compilada, você percebe erros antes mesmo de executar seu programa.
 
@@ -191,7 +179,6 @@ Quando o código é seu, é sempre preferível, ao invés de criar convenções 
 class Column { int value; }
 class Row { int value; }
 ~~~~~~
-{: .prettyprint}
 
 *7. Considere o contexto*
 {: .lessonSection}
@@ -205,7 +192,6 @@ Quanto menor o escopo da variável, mais específica ela tende a ser e, portanto
 ~~~~~~
 int theNumberOfStudentsEnrolledInACourse;
 ~~~~~~
-{: .prettyprint}
 
 Na maioria das vezes que você estiver escolhendo o nome da sua variável, lembre-se de considerar o contexto que ela faz parte. Se você está dentro da classe Course, “enrolledStudents” ao invés de "theNumberOfStudentsEnrolledInACourse" é suficiente.
 
@@ -214,7 +200,6 @@ public class Course {
   int enrolledStudents;
 }
 ~~~~~~
-{: .prettyprint}
 
 *8. Considere usar construtores com nome*
 {: .lessonSection}
@@ -226,7 +211,6 @@ new ComplexNumber(2, 9, 4);
 new ComplexNumber(4);
 new ComplexNumber("4.5");
 ~~~~~~
-{: .prettyprint}
 
 Nestes casos, a solução é criar um construtor privado e utilizar métodos públicos e estáticos que representem os construtores (agora com nome) da classe.
 
@@ -237,7 +221,6 @@ ComplexNumber.FromAPlusBI(2, 9, 4);
 ComplexNumber.FromNumber(4);
 ComplexNumber.FromString("4.5");
 ~~~~~~
-{: .prettyprint}
 
 *9. Use nomes do domínio*
 {: .lessonSection}
@@ -247,7 +230,6 @@ double multiplicacao (double d1, double d2);
 
 double multiplicacao (double multiplicando, double multiplicador);
 ~~~~~~
-{: .prettyprint}
 
 *10. Não tenha medo*
 {: .lessonSection}

@@ -20,7 +20,6 @@ Aqui trazemos um exemplo de uma demanda de software. Para fins didáticos, nos r
 
 Funciona, então deixa quieto. Certo? Prestem bastante atenção nesta função. O que ela faz?
 
-
 ~~~~~~
 function s (a, b) {
   var c = a - b;
@@ -35,7 +34,6 @@ function s (a, b) {
     return b + a;
 }
 ~~~~~~
-{: .prettyprint}
 
 <div class="largeSpace"></div>
 
