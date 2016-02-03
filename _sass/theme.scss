@@ -1,4 +1,6 @@
 $base-green: #76923c;
+$base-brown: #5d523c;
+$base-red: #802021;
 
 .btn.btn-green {
   color: #fff;
@@ -10,4 +12,16 @@ $base-green: #76923c;
   color: #fff;
   background-color: darken($base-green, 5%);
   border-color: darken($base-green, 15%);
+}
+
+pre {
+  background-color: #F0F0F0;
+}
+
+.hljs-title, .hljs-literal {
+  color: $base-green;
+}
+
+.hljs-string, .hljs-number {
+  color: $base-red;
 }

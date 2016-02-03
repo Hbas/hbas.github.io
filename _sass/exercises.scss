@@ -14,7 +14,7 @@
 
 	h2
 	{
-		background-color: #76923c;
+		background-color: $base-green;
 		color: white;
 		font-weight: bold;
 		text-align: center;
@@ -28,13 +28,6 @@
 	h2:first-child
 	{
 		margin-top: 0;
-	}
-
-	pre.prettyprint
-	{
-		margin-top: 20px;
-		border: 0;
-		padding: 5px;
 	}
 
 }
