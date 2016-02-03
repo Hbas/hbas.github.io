@@ -38,6 +38,8 @@ private static bool IsMultiple(int i, int j, bool debug)
 ~~~~~~
 {: .prettyprint}
 
+## Exercício 2.3: Contar domingos.
+
 A seguir, apresentamos os “requisitos” de um algoritmo na forma de um conjunto de testes unitários utilizando a plataforma NUnit. Em seguida, apresentamos uma solução para estes testes, com um código-fonte longe do ideal.
 
 Revise o código da solução, listando todos os problemas e, sem realizar nenhuma alteração nos testes unitários e **sem utilizar a classe DateTime**, refatore o método *FirstOfMonthSundays*.
