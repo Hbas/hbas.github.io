@@ -1,12 +1,14 @@
 $blue: #337ab7;
 $light-blue: lighten($blue, 15%);
+$light-gray: #ccc;
+$dark-gray: #777;
 
 .post .page-header, .post .page-header a {
   color: $light-blue;
 }
 
 .post .page-header {
-  border-color: #ccc;
+  border-color: $light-gray;
 }
 
 .post p {
@@ -19,13 +21,13 @@ $light-blue: lighten($blue, 15%);
 
 .post h2 {
   color: $light-blue;
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px dashed $light-gray;
   padding: 5px 0;
   text-align: center;
 }
 
 .post .legend {
-  color: #777;
+  color: $dark-gray;
   text-align: center;
   margin-top: 3px;
 }
@@ -47,8 +49,22 @@ $light-blue: lighten($blue, 15%);
 }
 
 .post-excerpt {
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px dashed $light-gray;
   padding-bottom: 15px;
+}
+
+.post-excerpt .with-category {
+  margin-bottom: 0;
+}
+
+.post-excerpt .category-link {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: $dark-gray;
+}
+
+.post-excerpt .category-link a {
+  color: $dark-gray;
 }
 
 .post-excerpt:last-child {

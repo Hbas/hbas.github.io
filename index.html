@@ -5,23 +5,68 @@ layout: default
   <h1>Henrique Borges @ HR for IT</h1>
   <p> Welcome! Please use the navigation bar above to click in what you were looking for. If this is your first time here, though, please keep reading...</p>
 </div>
-<h2>About this site</h2>
-<p>Software development is a fascinating activity, but I believe that the source code is mostly a reflection of the people, environment, culture and organizational dynamics behind them.
+<div class="page-header">
+  <h2>About this site</h2>
+</div>
+<p>
+  Software development is a fascinating activity, but I believe that the source code is mostly a reflection of the people, environment, culture and organizational dynamics behind them.
   Over the years, I have acummulated some leadership, management, human resources and software development techniques, resources and best practices.
-  This is my latest atempt to organise, store and be able to talk about and reference some of this data.</p>
-  <p>By that, I mean that this site will have opinions, links, courses and other resources about:</p>
-  <ul>
-    <li>How to develop clear job descriptions, expectations and responsibilities;</li>
-    <li>How to select appropriate people, either from internal or external recruiting;</li>
-    <li>How to write more effective, specific, and measurable performance objectives;</li>
-    <li>How to conduct one-on-one meetings and performance development discussions;</li>
-    <li>How to observe, give feedback and register the good and poor behavior;</li>
-    <li>How to provide effective orientation, education, and training;</li>
-    <li>How to provide ongoing coaching and feedback;</li>
-    <li>How to design effective compensation and recognition systems that reward people for their contributions;</li>
-    <li>How to provide promotional/career development opportunities for your staff;</li>
-    <li>How to facilitate organizational change in HR and IT;</li>
-    <li>How to do exit interviews, a necessary activity to understand why valued employees leave the organization;</li>
-    <li>... And whatever I am thinking about or working on ;)</li>
-  </ul>
+  This is my latest atempt to organise, store and be able to talk about and reference some of this data.
+</p>
+<p>By that, I mean that this site will have opinions, links, courses and other resources about:</p>
+<ul>
+  <li>How to develop clear job descriptions, expectations and responsibilities;</li>
+  <li>How to select appropriate people, either from internal or external recruiting;</li>
+  <li>How to write more effective, specific, and measurable performance objectives;</li>
+  <li>How to conduct one-on-one meetings and performance development discussions;</li>
+  <li>How to observe, give feedback and register the good and poor behavior;</li>
+  <li>How to provide effective orientation, education, and training;</li>
+  <li>How to provide ongoing coaching and feedback;</li>
+  <li>How to design effective compensation and recognition systems that reward people for their contributions;</li>
+  <li>How to provide promotional/career development opportunities for your staff;</li>
+  <li>How to facilitate organizational change in HR and IT;</li>
+  <li>How to do exit interviews, a necessary activity to understand why valued employees leave the organization;</li>
+  <li>... And whatever I am thinking about or working on ;)</li>
+</ul>
+<div class="row">
+  <div class="col-md-6">
+    <div class="page-header">
+      <h2>Latest posts</h2>
+    </div>
+    {% for post in site.posts limit:5 %}
+    <div class="post-excerpt">
+      <h3 class="with-category">
+        <a href="{{post.url}}">{{ post.title }}</a>
+        &nbsp;&nbsp;<small>({{post.date | date: '%B %d, %Y'}})</small>
+      </h3>
+      <p class="category-link">
+        >>> In <a href="/{{post.category}}">{{post.category}}</a>
+      </p>
+      <div>
+        {{post.excerpt}}
+      </div>
+      <a href="{{post.url}}">Read more...</a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="col-md-6">
+    <div class="page-header">
+      <h2>Latest e-courses (in portuguese)</h2>
+    </div>
+    <div class="post-excerpt">
+      <h3><a href="/courses/codigolimpo">Clean Code: From the trenches</a></h3>
+      <div>
+        <strong>Table of contents</strong>
+        <ol>
+          <li>The Battle of Name (How to name methods, classes, etc)</li>
+          <li>Searching for a Purpose (How to create functions and methods)</li>
+          <li>Company (Pair programming and code reviews)</li>
+          <li>Commentary death (When to use and when to remove code comments)</li>
+          <li>The Class Struggle (How to divide concepts/objects)</li>
+          <li>S.O.L.I.D. design principles</li>
+          <li>Introduction to Refactoring and TDD</li>
+          <li>Final project (Open-Source)</li>
+      </div>
+    </div>
+  </div>
 </div>
