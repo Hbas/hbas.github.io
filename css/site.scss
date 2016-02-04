@@ -22,10 +22,15 @@ body
 	text-align: justify;
 }
 
+.capitalize {
+	text-transform: capitalize;
+}
+
 table.centered th {
 	text-align: center;
 }
 
-@import "theme";
+@import "courses";
+@import "posts";
 @import "lessons";
 @import "exercises";

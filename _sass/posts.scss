@@ -1,0 +1,49 @@
+$blue: #337ab7;
+$light-blue: lighten($blue, 15%);
+
+.post .page-header, .post .page-header a {
+  color: $light-blue;
+}
+
+.post p {
+  padding-bottom: 15px;
+}
+
+.post .page-meta {
+  font-size: 12px;
+}
+
+.post h2 {
+  color: $light-blue;
+  border-bottom: 1px dashed $light-blue;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.post .legend {
+  color: #777;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.post .page-meta .glyphicon {
+  margin-right: 2px;
+}
+
+.post .page-meta > span:first-child {
+  margin-left: 0;
+}
+
+.post .page-meta > span {
+  margin: 0 10px;
+}
+
+.posts-in-category a, .post a {
+  color: $blue;
+}
+
+.youtube-container {
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}

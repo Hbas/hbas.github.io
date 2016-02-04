@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="post">
+  <div class="page-header">
+    <h1><a href="{{page.url}}">{{page.title}}</a></h1>
+    <div class="page-meta">
+      <span class="date">
+        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+        <span>{{page.date | date: '%B %d, %Y'}}</span>
+      </span>
+      <span class="category capitalize">
+        <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+        <a href="/{{page.category}}">{{page.category}}</a>
+      </span>
+      <span class="tag">
+        <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+        {% for tag in page.tags %}
+          <span>{{ tag }}</span>{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      </span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+    {{ content }}
+    </div>
+  </div>
+</div>
