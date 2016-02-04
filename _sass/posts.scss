@@ -5,6 +5,10 @@ $light-blue: lighten($blue, 15%);
   color: $light-blue;
 }
 
+.post .page-header {
+  border-color: #ccc;
+}
+
 .post p {
   padding-bottom: 15px;
 }
@@ -15,7 +19,7 @@ $light-blue: lighten($blue, 15%);
 
 .post h2 {
   color: $light-blue;
-  border-bottom: 1px dashed $light-blue;
+  border-bottom: 1px dashed #ccc;
   padding: 5px 0;
   text-align: center;
 }
@@ -38,8 +42,17 @@ $light-blue: lighten($blue, 15%);
   margin: 0 10px;
 }
 
-.posts-in-category a, .post a {
+.post-excerpt a, .post a {
   color: $blue;
+}
+
+.post-excerpt {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 15px;
+}
+
+.post-excerpt:last-child {
+  border-bottom: 0;
 }
 
 .youtube-container {
