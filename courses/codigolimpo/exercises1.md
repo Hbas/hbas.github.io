@@ -22,10 +22,10 @@ layout: codigolimpo/exercises
         <div class="modal-body">
           <p>Por favor, confirme que você realmente fez os exercícios desta página, digitando o texto abaixo (sem as aspas). Esta é sua última chance para praticar um pouco mais esse assunto antes de ver uma possível resposta.</p>
           <p class="confirmation">"<span id="expectedText">Fiz todos os exercícios do módulo de nomes e enviei ao professor-tutor</span>"</p>
-          <input type="text" id="confirmationField" class="form-control"></input>
+          <input type="text" id="confirmationField" class="form-control" />
         </div>
         <div class="modal-footer">        
-          <input type="submit" id="nextLesson" class="btn btn-green" disabled="disabled" value="Ver resposta comentada"></input>
+          <input type="submit" id="nextLesson" class="btn btn-green" disabled="disabled" value="Ver resposta comentada" />
         </div>
       </form>
     </div>

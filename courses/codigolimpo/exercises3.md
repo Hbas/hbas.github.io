@@ -21,10 +21,10 @@ layout: codigolimpo/exercises
         <div class="modal-body">
         <p>Por favor, confirme que você realmente fez os exercícios desta página, digitando o texto abaixo (sem as aspas). Esta é sua última chance para praticar um pouco mais esse assunto antes de seguir para a próxima lição.</p>
           <p class="confirmation">"<span id="expectedText">Fiz os exercícios do módulo de revisão de código com minha dupla</span>"</p>
-          <input type="text" id="confirmationField" class="form-control"></input>
+          <input type="text" id="confirmationField" class="form-control" />
         </div>
         <div class="modal-footer">
-            <input type="submit" id="nextLesson" class="btn btn-green" disabled="disabled" value="Seguir para o próximo assunto"></input>
+            <input type="submit" id="nextLesson" class="btn btn-green" disabled="disabled" value="Seguir para o próximo assunto" />
         </div>
       </form>
     </div>
