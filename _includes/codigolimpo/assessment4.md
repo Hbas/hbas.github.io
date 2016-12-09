@@ -81,7 +81,7 @@ private final String DATE_REGEXP =
 
 ~~~~~~
 // Copyright (C) 2000-2016 by Henrique Borges. All rights reserved.
-// Released under the terms of the GNU General Public License version 2 or later.</code></pre>
+// Released under the terms of the GNU General Public License version 2 or later.
 ~~~~~~
 
 **4.2.4:**
