@@ -82,9 +82,9 @@ Nossas aulas serão majoritariamente on-line, através deste site, e o aprendiza
 
 Para cada unidade, começaremos com um exercício de auto-avaliação sobre o tópico. Você deve buscar, sozinho ou com colegas, aprender o necessário para resolver o problema com a maior qualidade possível e, individualmente, resolver este exercício. Por se tratar apenas de uma auto-avaliação, independente da qualidade do código nesta primeira etapa, você poderá preencher um formulário de confirmação e seguir para a próxima lição.
 
-Com isso, você terá acesso a um texto e/ou vídeo explicando o assunto, bem como a um conjunto maior de exercícios. Você deve aprender o conteúdo, realizar individualmente estes novos exercícios, revisar os exercícios anteriores de auto-avaliação, e enviar tudo novamente.
+Com isso, você terá acesso a um texto e/ou vídeo explicando o assunto, bem como a um conjunto maior de exercícios. Você deve aprender o conteúdo, realizar individualmente estes novos exercícios, revisar os exercícios anteriores de auto-avaliação, e enviar tudo para seu professor-tutor.
 
-Após o segundo envio, o professor-tutor irá corrigir o material recebido e lhe dar feedback, solicitando melhorias. Dependendo do caso, o professor-tutor pode liberar seu acesso a exercícios complementares (extras) de algum assunto ou unidade. Apenas quando o professor-tutor avaliar que o conteúdo foi *realmente apreendido* por você é que você deverá acessar a próxima unidade.
+Após o envio, o professor-tutor irá corrigir o material recebido e lhe dar feedback, solicitando melhorias. Dependendo do caso, o professor-tutor pode liberar seu acesso a exercícios complementares (extras) de algum assunto ou unidade. Apenas quando o professor-tutor avaliar que o conteúdo foi *realmente apreendido* por você é que você deverá acessar a próxima unidade.
 
 Durante todo o curso, um forum / lista de e-mails estará disponível. Além disso, ocasionalmente, o professor-tutor irá agendar reuniões presenciais ou reuniões on-line (através de ferramentas como Skype e/ou GTalk) para a discussão de assuntos, resolução sincrona de dúvidas e compartilhamento de informações.
 
