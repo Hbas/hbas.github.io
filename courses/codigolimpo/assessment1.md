@@ -20,10 +20,10 @@ layout: codigolimpo/exercises
         <div class="modal-body">
           <p>Por favor, confirme que você realmente fez os exercícios desta página, digitando o texto abaixo (sem as aspas):</p>
           <p class="confirmation">"<span id="expectedText">Fiz os exercícios de auto-avaliação do módulo de nomes</span>"</p>
-          <input type="text" id="confirmationField" class="form-control"></input>
+          <input type="text" id="confirmationField" class="form-control" />
         </div>
         <div class="modal-footer">      
-          <input type="submit" id="nextLesson" class="btn btn-green" disabled="disabled" value="Próxima lição"></input>
+          <input type="submit" id="nextLesson" class="btn btn-green" disabled="disabled" value="Próxima lição" />
         </div>
       </form>
     </div>
