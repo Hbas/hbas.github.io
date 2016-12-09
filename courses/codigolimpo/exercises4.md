@@ -1,98 +1,40 @@
 ---
 layout: codigolimpo/exercises
 ---
+
 {% include codigolimpo/assessment4.md %}
+{% include codigolimpo/exercises4.md %}
 
-## Exercício 4.3: Let´s comment a little bit more
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-brown btn-lg btn-block btn-confirmation" data-toggle="modal" data-target="#confirmTrial">
+  Já fiz os exercícios acima. Gostaria de ver as dicas e uma possível resposta.
+</button>
 
-Quais dos comentários abaixo devem ser mantidos? Justifique sua resposta
+<!-- Modal -->
+<div class="modal fade" id="confirmTrial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form action="solution4.html">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Confirmação de aprendizado</h4>
+        </div>
+        <div class="modal-body">
+        <p>Por favor, confirme que você realmente fez os exercícios desta página, digitando o texto abaixo (sem as aspas). Esta é sua última chance para praticar um pouco mais esse assunto antes de ver uma possível resposta.</p>
+          <p class="confirmation">"<span id="expectedText">Fiz todos os exercícios do módulo de comentários e enviei ao professor-tutor</span>"</p>
+          <input type="text" id="confirmationField" class="form-control"></input>
+        </div>
+        <div class="modal-footer">
+            <input type="submit" id="nextLesson" class="btn btn-green" disabled="disabled" value="Ver resposta comentada"></input>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-**4.3.1:**
-
-~~~~~~  
-/** The name. */
-private String name;
-
-/** The version. */
-private String version;
-
-/** The name. */
-private String licenceName;
-
-/** The info. */
-private String info;
-~~~~~~
-
-**4.3.2:**
-
-~~~~~~
-this.bytePos = writeBytes(pngIdBytes, 0);
-//hdrPos = bytePos;
-writeHeader();
-writeResolution();
-//dataPos = bytePos;
-if (writeImageData()) {
-    writeEnd();
-    this.pngBytes = resizeByteArray(this.pngBytes, this.maxPos);
-}
-else {
-    this.pngBytes = null;
-}
-return this.pngBytes;
-~~~~~~
-
-**4.3.3:**
-
-~~~~~~
-/**
-* Port where the server runs. Defaults to <b>8081</b>.
-*
-* @@param port
-*/
-public void setPort(int port)
-{
-    this.serverPort = port;
-}
-~~~~~~
-
-**4.3.4:**
-
-~~~~~~
-/*
-
-RFC 4648                    Base-N Encodings                October 2006
-
-
-1.  Introduction
-
-   Base encoding of data is used in many situations to store or transfer
-   data in environments that, perhaps for legacy reasons, are restricted
-   to US-ASCII [1] data.  Base encoding can also be used in new
-   applications that do not have legacy restrictions, simply because it
-   makes it possible to manipulate objects with text editors.
-
-   In the past, different applications have had different requirements
-   and thus sometimes implemented base encodings in slightly different
-   ways.  Today, protocol specifications sometimes use base encodings in
-   general, and "base64" in particular, without a precise description or
-   reference.  Multipurpose Internet Mail Extensions (MIME) [4] is often
-   used as a reference for base64 without considering the consequences
-   for line-wrapping or non-alphabet characters.  The purpose of this
-   specification is to establish common alphabet and encoding
-   considerations.  This will hopefully reduce ambiguity in other
-   documents, leading to better interoperability.
-
-   (... THIS COMMENT GOES ON. IT IS A COPY AND PASTE OF THE RFC...)
-*/
-
-public class BaseNEncoder(){
-
-    public string ToBase64(string data){
-         (...)
-    }
-
-    public string ToBase32(string data){
-         (...)
-    }
-}
-~~~~~~
+<script>
+  $("#confirmationField").on('input propertychange paste', function (){
+    var textOk = $("#confirmationField").val() === $("#expectedText").text();
+    $("#nextLesson").prop('disabled', !textOk);
+  });
+</script>

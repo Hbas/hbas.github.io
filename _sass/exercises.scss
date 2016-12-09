@@ -1,4 +1,4 @@
-.exercices
+.exercises
 {
 
 	p
@@ -10,6 +10,21 @@
 	hr
 	{
 		border: 1px dashed #222;
+	}
+
+	.btn
+	{
+		font-size: 14pt;
+	}
+
+	.btn-confirmation
+	{
+		margin-top: 80px;
+	}
+
+	.confirmation {
+		color: $base-green;
+		font-weight: bold;
 	}
 
 	h2

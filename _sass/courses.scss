@@ -15,6 +15,18 @@ $sand: #ddbe92;
   border-color: darken($base-green, 15%);
 }
 
+.btn.btn-brown {
+  color: #fff;
+  background-color: $base-brown;
+  border-color: darken($base-brown, 10%);
+}
+
+.btn.btn-brown:hover, .btn.btn-brown:focus {
+  color: #fff;
+  background-color: darken($base-brown, 5%);
+  border-color: darken($base-brown, 15%);
+}
+
 pre {
   background-color: #F0F0F0;
 }
