@@ -13,7 +13,7 @@ Performance Management consists of a system or process whereby:
 
 It is so rare to have decent performance management in companies nowadays, that when managers go out of their way to provide honest feedback and actually improve the performance of their workers they should be handsomely rewarded and recognized.
 
-This post is a collection of best practices and topics on Performance Management that I learned over the years (and lost the references). Subsequent posts in this subject will be more clearly written and better organized but, even as it is, I hope that this will be useful to me and to some of  my readers.
+This post is a collection of best practices and topics on Performance Management that I learned over the years (and lost the references). Subsequent posts in this subject will be more clearly written and better organized but, even as it is, I hope that this will be useful to me and to some of my readers.
 
 ### Pre-conditions
 
